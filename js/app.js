@@ -6,8 +6,11 @@ app.config(function ($routeProvider) {
             templateUrl: "view/home.html",
             controller: "producto"
         })
-        .when('/productos',{
+        .when('/productos', {
             templateUrl: "view/producto.html",
+            controller: "producto"
+        }).when('/consultas',{
+            templateUrl: "view/consultas.html",
             controller: "producto"
         });
 
@@ -15,8 +18,8 @@ app.config(function ($routeProvider) {
 
 /*CONTROLADOR */
 app.controller("producto", function ($scope) {
-    
-    $scope.btnprueba = function(){
+
+    $scope.btnprueba = function () {
         console.log("click de prueba");
     }
 });
